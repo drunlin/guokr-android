@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:background="?selectableItemBackground"
+    tools:ignore="RtlHardcoded,RtlSymmetry">
+    <com.github.drunlin.guokr.widget.CircleImageView
+        android:id="@+id/img_avatar"
+        android:layout_width="@dimen/avatar_size"
+        android:layout_height="@dimen/avatar_size"
+        tools:src="@drawable/ic_avatar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/avatar_horizontal_margin"
+        android:orientation="vertical"
+        tools:ignore="RtlHardcoded">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_horizontal_margin">
+            <TextView
+                android:id="@+id/text_name"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                tools:text="作者"
+                style="@style/AppTheme.PrimaryText.SingleLine"/>
+            <TextView
+                android:id="@+id/text_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="2015-01-01 00:00"
+                style="@style/AppTheme.HintText"/>
+        </LinearLayout>
+        <com.github.drunlin.guokr.widget.RichTextView
+            android:id="@+id/text_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/vertical_gap_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            tools:text="你有一条新的消息"/>
+        <include layout="@layout/view_divider"/>
+    </LinearLayout>
+</LinearLayout>

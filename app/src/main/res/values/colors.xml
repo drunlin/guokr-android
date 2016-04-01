@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0288D1</color>
+    <color name="colorPrimaryDark">#0277BD</color>
+    <color name="colorPrimaryLight">#039BE5</color>
+    <color name="colorAccent">#85C155</color>
+    <color name="colorBackground">#FAFAFA</color>
+
+    <color name="textColorPrimary">@color/primary_text</color>
+    <color name="textColorSecondary">@color/secondary_text</color>
+    <color name="textColorHint">@color/tertiary_text</color>
+
+    <color name="buttonColorNormal">#60000000</color>
+    <color name="cardBackgroundColor">#FFFFFF</color>
+
+    <color name="textColorSelected">#FFFFFF</color>
+    <color name="textColorUnselected">#78FFFFFF</color>
+
+    <!--主题站文章标签-->
+    <color name="labelTruth">#F96860</color>
+    <color name="labelVisual">#C6DE25</color>
+    <color name="labelSpecial">#FF9536</color>
+    <color name="labelForward">#91DBD5</color>
+    <color name="labelRead">#88BC00</color>
+    <color name="labelHot">#F96860</color>
+    <color name="labelComment">#60BAF9</color>
+    <color name="labelCommon">#D6D6D6</color>
+    <color name="labelText">#FFFFFF</color>
+    <!--主题站作者名-->
+    <color name="articleAuthor">#46B6B6</color>
+    <color name="articleInfo">#B8B8B8</color>
+</resources>

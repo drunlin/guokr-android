@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+            <com.github.drunlin.guokr.widget.CircleImageView
+                android:id="@+id/img_avatar"
+                android:layout_width="@dimen/avatar_size"
+                android:layout_height="@dimen/avatar_size"
+                android:layout_marginRight="@dimen/avatar_horizontal_margin"
+                tools:src="@drawable/ic_avatar"
+                tools:ignore="RtlHardcoded"/>
+            <TextView
+                android:id="@+id/text_author"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                tools:text="作者"
+                style="@style/AppTheme.PrimaryText.SingleLine"/>
+            <TextView
+                android:id="@+id/text_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="2015-10-10 10:10"
+                style="@style/AppTheme.HintText"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/vertical_gap_margin"
+            tools:text="标题"
+            style="@style/AppTheme.PrimaryText"/>
+        <com.github.drunlin.guokr.widget.RichTextView
+            android:id="@+id/text_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/vertical_gap_margin"
+            tools:text="果壳什么呢？"/>
+    </LinearLayout>
+    <include layout="@layout/view_divider"/>
+    <TextView
+        android:id="@+id/text_all_replies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/vertical_gap_margin_small"
+        android:layout_marginBottom="@dimen/avatar_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:text="@string/label_all_comments"
+        style="@style/AppTheme.HintText"/>
+</LinearLayout>

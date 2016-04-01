@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.github.drunlin.guokr" >
+    <application
+        android:name=".App"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+        <!--添加调试时作为view单元测试的平台-->
+        <activity
+            android:name="android.support.v7.app.AppCompatActivity"
+            android:theme="@style/AppTheme"/>
+    </application>
+</manifest>

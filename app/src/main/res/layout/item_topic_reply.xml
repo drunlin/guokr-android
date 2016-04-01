@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="@dimen/item_horizontal_margin"
+    android:paddingRight="@dimen/item_horizontal_margin"
+    android:paddingTop="@dimen/item_vertical_margin"
+    android:paddingBottom="@dimen/item_bottom_margin"
+    android:background="?attr/selectableItemBackground">
+    <com.github.drunlin.guokr.widget.CircleImageView
+        android:id="@+id/img_avatar"
+        android:layout_width="@dimen/avatar_size"
+        android:layout_height="@dimen/avatar_size"
+        android:layout_marginRight="@dimen/avatar_horizontal_margin"
+        tools:src="@drawable/ic_avatar"
+        tools:ignore="RtlHardcoded"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/text_author"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                tools:text="作者"
+                style="@style/AppTheme.PrimaryText.SingleLine"/>
+            <com.github.drunlin.guokr.widget.TintImageButton
+                android:id="@+id/btn_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_thumb_up"
+                app:tint="@color/btn_normal"
+                tools:tint="@color/btn_normal"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                tools:ignore="ContentDescription"/>
+            <TextView
+                android:id="@+id/text_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="10"
+                style="@style/AppTheme.ImageButtonLabel"/>
+            <include layout="@layout/view_anchor"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/text_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="#2"
+                style="@style/AppTheme.HintText"/>
+            <TextView
+                android:id="@+id/text_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/horizontal_gap_margin"
+                tools:text="2015-01-01"
+                style="@style/AppTheme.HintText"
+                tools:ignore="RtlHardcoded"/>
+        </LinearLayout>
+
+        <com.github.drunlin.guokr.widget.RichTextView
+            android:id="@+id/text_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,61 @@
+{
+  "now": "2016-01-05T15:47:09.371877+08:00",
+  "ok": true,
+  "result": {
+    "topic": null,
+    "group": {
+      "is_member": false,
+      "is_indexable": true,
+      "is_publicly_readable": true,
+      "posts_count": 21252,
+      "is_membership_applied": false,
+      "id": 0,
+      "icon": {
+        "large": "http://example.com/img.png",
+        "small": "http://example.com/img.png",
+        "normal": "http://example.com/img.png"
+      },
+      "members_count": 993860,
+      "name": "名称",
+      "level": "active",
+      "url": "http://www.guokr.com/group/00/",
+      "is_application_required": false,
+      "introduction_summary": "概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要",
+      "resource_url": "/fakeurl"
+    },
+    "is_digest": false,
+    "title": "标题标题标题标题标题标题标题标题标题",
+    "url": "http://www.guokr.com/post/000000/",
+    "is_virgin": true,
+    "author": {
+      "ukey": "000000",
+      "is_title_authorized": false,
+      "nickname": "作者作者",
+      "amended_reliability": "0",
+      "is_exists": true,
+      "title": "",
+      "url": "http://www.guokr.com/i/0000000000/",
+      "gender": "female",
+      "followers_count": 1,
+      "avatar": {
+        "large": "http://example.com/img.png",
+        "small": "http://example.com/img.png",
+        "normal": "http://example.com/img.png"
+      },
+      "resource_url": "http://apis.guokr.com/community/user/000000.json"
+    },
+    "html": "内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容",
+    "is_replyable": true,
+    "summary": "概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要",
+    "date_last_replied": "2016-01-05T15:31:56.625201+08:00",
+    "date_created": "2013-11-20T16:19:03.947638+08:00",
+    "is_stick": false,
+    "ukey_author": "000000",
+    "content": "内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容",
+    "replies_count": 12,
+    "resource_url": "http://apis.guokr.com/group/post/000000.json",
+    "group_id": 0,
+    "recommends_count": 0,
+    "id": 0
+  }
+}

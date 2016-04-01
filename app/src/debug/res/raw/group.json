@@ -1,0 +1,26 @@
+{
+  "now": "2016-02-26T16:36:13.370100+08:00",
+  "ok": true,
+  "result": [
+    {
+      "is_member": false,
+      "is_indexable": true,
+      "is_publicly_readable": true,
+      "posts_count": 8961,
+      "is_membership_applied": false,
+      "id": 0,
+      "icon": {
+        "large": "http://example.com/img.png",
+        "small": "http://example.com/img.png",
+        "normal": "http://example.com/img.png"
+      },
+      "members_count": 1075169,
+      "name": "DIY",
+      "level": "active",
+      "url": "http://www.guokr.com/group/00/",
+      "is_application_required": false,
+      "introduction_summary": "概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要",
+      "resource_url": "/fakeurl"
+    }
+  ]
+}

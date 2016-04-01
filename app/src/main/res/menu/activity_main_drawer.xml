@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/ic_explore"
+        android:title="@string/nav_explore"/>
+    <item
+        android:id="@+id/nav_notice"
+        android:icon="@drawable/ic_notifications"
+        android:visible="false"
+        android:title="@string/nav_notices"/>
+    <item
+        android:id="@+id/nav_message"
+        android:icon="@drawable/ic_message_black"
+        android:visible="false"
+        android:title="@string/nav_messages"/>
+    <group
+        android:id="@+id/preference">
+        <item
+            android:id="@+id/nav_theme"
+            android:icon="@drawable/ic_night_mode"
+            android:title="@string/nav_night_mode"/>
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/nav_settings"/>
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_info_outline"
+            android:title="@string/nav_about"/>
+    </group>
+</menu>

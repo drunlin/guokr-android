@@ -1,0 +1,104 @@
+apply plugin: 'com.android.application'
+apply plugin: 'me.tatarka.retrolambda'
+
+def getProjectProperty(String name) {
+    return project.hasProperty(name) ? project.property(name) : System.getenv(name)
+}
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '23.0.2'
+
+    defaultConfig {
+        applicationId 'com.github.drunlin.guokr'
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName '1.0'
+
+        vectorDrawables.useSupportLibrary = true
+
+        testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
+    }
+
+    packagingOptions {
+        exclude 'META-INF/services/javax.annotation.processing.Processor'
+        exclude 'LICENSE.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/*'
+        exclude 'META-INF/maven/com.google.guava/guava/pom.properties'
+        exclude 'META-INF/maven/com.google.guava/guava/pom.xml'
+    }
+
+    signingConfigs {
+        release {
+            storeFile file(getProjectProperty('STORE_FILE'))
+            storePassword getProjectProperty('STORE_PASSWORD');
+            keyAlias getProjectProperty('KEY_ALIAS')
+            keyPassword getProjectProperty('KEY_PASSWORD')
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lintOptions {
+        disable 'DefaultLocale'
+        disable 'ContentDescription'
+    }
+}
+
+retrolambda {
+    jdk System.getenv('JAVA8_HOME')
+    oldJdk System.getenv('JAVA_HOME')
+    javaVersion JavaVersion.VERSION_1_7
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':signals')
+    compile 'com.android.support:appcompat-v7:23.2.1'
+    compile 'com.android.support:design:23.2.1'
+    compile 'com.mcxiaoke.volley:library:1.0.19'
+    compile 'com.google.code.gson:gson:2.4'
+    compile 'com.android.support:cardview-v7:23.2.1'
+    compile 'com.android.support:recyclerview-v7:23.2.1'
+    compile 'com.android.support:support-v4:23.2.1'
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.1.7'
+    compile 'org.apmem.tools:layouts:1.10@aar'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.getbase:floatingactionbutton:1.10.1'
+    compile 'com.squareup.dagger:dagger:1.2.2'
+    compile 'com.squareup.dagger:dagger-compiler:1.2.2'
+    compile 'jp.wasabeef:richeditor-android:1.2.0'
+    compile 'com.squareup.okhttp:okhttp:2.7.0'
+    compile 'org.jsoup:jsoup:1.8.3'
+    compile 'com.jakewharton:disklrucache:2.0.2'
+    compile 'de.hdodenhof:circleimageview:2.0.0'
+    compile 'org.cryse.widget:persistentsearchview:1.0.3@aar'
+
+    androidTestCompile 'com.squareup:javawriter:2.5.0'
+    androidTestCompile 'com.android.support.test:runner:0.4.1'
+    androidTestCompile 'com.android.support.test:rules:0.4.1'
+    androidTestCompile 'com.android.support:support-annotations:23.2.1'
+    androidTestCompile 'org.hamcrest:hamcrest-library:1.3'
+    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.1'
+    androidTestCompile 'com.android.support.test.espresso:espresso-intents:2.2.1'
+    androidTestCompile 'com.crittercism.dexmaker:dexmaker:1.4'
+    androidTestCompile 'com.crittercism.dexmaker:dexmaker-dx:1.4'
+    androidTestCompile 'com.crittercism.dexmaker:dexmaker-mockito:1.4'
+    androidTestCompile 'org.mockito:mockito-core:1.10.19'
+    androidTestCompile 'com.squareup.okhttp:mockwebserver:2.7.0'
+}

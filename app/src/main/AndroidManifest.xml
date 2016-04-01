@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.github.drunlin.guokr"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18"/>
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning,UnusedAttribute">
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.SettingsActivity"
+            android:label="@string/title_activity_settings"/>
+        <activity
+            android:name=".activity.ArticleActivity"
+            android:label="@string/title_activity_article">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data
+                    android:scheme="http"
+                    android:pathPrefix="/article/"/>
+                <data android:host="guokr.com"/>
+                <data android:host="www.guokr.com"/>
+                <data android:host="m.guokr.com"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="@string/title_activity_login"/>
+        <activity
+            android:name=".activity.SearchableActivity"
+            android:label="@string/title_activity_searchable"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/activity_searchable"/>
+        </activity>
+        <activity android:name=".activity.WebPageActivity"/>
+        <activity
+            android:name=".activity.MessageListActivity"
+            android:label="@string/title_activity_message_list"/>
+        <activity
+            android:name=".activity.NoticeListActivity"
+            android:label="@string/title_activity_notice_list"/>
+        <activity
+            android:name=".activity.PostActivity"
+            android:label="@string/title_activity_post">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data
+                    android:scheme="http"
+                    android:pathPrefix="/post/"/>
+                <data android:host="guokr.com"/>
+                <data android:host="www.guokr.com"/>
+                <data android:host="m.guokr.com"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.QuestionActivity"
+            android:label="@string/title_activity_question">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data
+                    android:scheme="http"
+                    android:pathPrefix="/question/"/>
+                <data android:host="guokr.com"/>
+                <data android:host="www.guokr.com"/>
+                <data android:host="m.guokr.com"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.UserActivity"
+            android:label="@string/title_activity_user"
+            android:theme="@style/AppTheme.Transparent"/>
+        <activity
+            android:name=".activity.GroupActivity"
+            android:label="@string/title_activity_group">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data
+                    android:scheme="http"
+                    android:pathPrefix="/group/"/>
+                <data android:host="guokr.com"/>
+                <data android:host="www.guokr.com"/>
+                <data android:host="m.guokr.com"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.AboutActivity"
+            android:label="@string/title_activity_about"/>
+        <activity android:name=".activity.LicenceActivity"/>
+    </application>
+</manifest>

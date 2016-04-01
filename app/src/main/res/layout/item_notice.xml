@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="?selectableItemBackground"
+    tools:ignore="RtlHardcoded">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/item_vertical_margin"
+        android:layout_marginBottom="@dimen/item_bottom_margin"
+        android:layout_marginLeft="@dimen/item_horizontal_margin"
+        android:layout_marginRight="@dimen/item_horizontal_margin"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/text_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="一条通知"
+            style="@style/AppTheme.SecondaryText"/>
+        <TextView
+            android:id="@+id/text_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/vertical_gap_margin"
+            android:layout_gravity="right"
+            tools:text="2015-01-01 18:00"
+            style="@style/AppTheme.HintText"
+            tools:ignore="RtlHardcoded"/>
+    </LinearLayout>
+    <include layout="@layout/view_divider"/>
+</LinearLayout>

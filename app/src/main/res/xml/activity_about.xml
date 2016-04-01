@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+        android:title="@string/title_project"
+        android:summary="@string/project_site">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="@string/project_site"/>
+    </Preference>
+    <Preference
+        android:title="@string/title_author"
+        android:summary="drunlin@outlook.com">
+        <intent
+            android:action="android.intent.action.SENDTO"
+            android:data="mailto:drunlin@outlook.com"/>
+    </Preference>
+    <Preference
+        android:title="@string/title_licences">
+        <intent
+            android:targetPackage="com.github.drunlin.guokr"
+            android:targetClass="com.github.drunlin.guokr.activity.LicenceActivity"/>
+    </Preference>
+</PreferenceScreen>

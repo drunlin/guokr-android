@@ -1,0 +1,63 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="android:windowBackground">@color/colorBackground</item>
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <item name="android:textColorSecondary">@color/textColorSecondary</item>
+        <item name="android:textColorHint">@color/textColorHint</item>
+
+        <item name="fab_addButtonColorNormal">@color/colorPrimary</item>
+        <item name="fab_addButtonColorPressed">@color/colorPrimaryLight</item>
+        <item name="fab_colorNormal">@color/colorPrimary</item>
+        <item name="fab_colorPressed">@color/colorPrimaryLight</item>
+
+        <item name="alertDialogTheme">@style/AppTheme.Dialog</item>
+
+        <item name="colorControlNormal">@color/colorBackground</item>
+    </style>
+
+    <style name="AppTheme.Dialog" parent="Theme.AppCompat.Light.Dialog.Alert"/>
+
+    <style name="AppTheme.Transparent"/>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="AppTheme.TabLayout" parent="Widget.Design.TabLayout">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="tabSelectedTextColor">@color/textColorSelected</item>
+        <item name="tabTextColor">@color/textColorUnselected</item>
+    </style>
+
+    <style name="AppTheme.PrimaryText" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+
+    <style name="AppTheme.PrimaryText.SingleLine">
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="AppTheme.SecondaryText" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
+
+    <style name="AppTheme.HintText" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">12.5sp</item>
+        <item name="android:textColor">?android:textColorHint</item>
+    </style>
+
+    <style name="AppTheme.ImageButtonLabel" parent="AppTheme.SecondaryText">
+        <item name="android:textColor">@color/buttonColorNormal</item>
+        <item name="android:layout_marginLeft">@dimen/horizontal_gap_margin_small</item>
+    </style>
+</resources>

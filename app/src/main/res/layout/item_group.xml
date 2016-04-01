@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="?selectableItemBackground"
+    tools:ignore="RtlHardcoded">
+    <com.github.drunlin.guokr.widget.CircleImageView
+        android:id="@+id/img_icon"
+        android:layout_width="@dimen/avatar_size"
+        android:layout_height="@dimen/avatar_size"
+        android:layout_marginLeft="@dimen/item_horizontal_margin"
+        android:layout_marginRight="@dimen/avatar_horizontal_margin"
+        tools:src="@drawable/ic_avatar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/item_horizontal_margin"
+        android:layout_marginTop="@dimen/item_vertical_margin"
+        android:layout_marginBottom="@dimen/item_vertical_margin"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="果壳小组"
+            style="@style/AppTheme.PrimaryText"/>
+        <TextView
+            android:id="@+id/text_group_member"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="123313 人加入"
+            style="@style/AppTheme.SecondaryText"/>
+    </LinearLayout>
+</LinearLayout>

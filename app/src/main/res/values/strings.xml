@@ -1,0 +1,187 @@
+<resources>
+    <string name="app_name">松果</string>
+
+    <string name="navigation_drawer_open">打开抽屉</string>
+    <string name="navigation_drawer_close">关闭抽屉</string>
+
+    <string name="menu_search">搜索</string>
+    <string name="hint_search">搜索果壳</string>
+
+    <string-array name="activity_main_tabs">
+        <item>@string/menu_scientific</item>
+        <item>@string/menu_group</item>
+        <item>@string/menu_ask</item>
+    </string-array>
+
+    <string name="menu_scientific">科学人</string>
+    <string name="menu_ask">问答</string>
+    <string name="menu_group">小组</string>
+
+    <!--主题站文章类型，格式为key|name-->
+    <string name="article_all">all|全部</string>
+    <string-array name="article_channels">
+        <item>hot|热点</item>
+        <item>frontier|前沿</item>
+        <item>review|评论</item>
+        <item>interview|专访</item>
+        <item>visual|视觉</item>
+        <item>brief|速读</item>
+        <item>fact|谣言粉碎机</item>
+        <item>techb|商业科技</item>
+    </string-array>
+    <string-array name="article_subjects">
+        <item>physics|物理</item>
+        <item>biology|生物</item>
+        <item>environment|环境</item>
+        <item>astronomy|天文</item>
+        <item>medicine|医学</item>
+        <item>food|食物</item>
+        <item>forensic|法证</item>
+        <item>earth|地学</item>
+        <item>psychology|心理</item>
+        <item>chemistry|化学</item>
+        <item>sci-fiction|科幻</item>
+        <item>math|数学</item>
+        <item>diy|DIY</item>
+        <item>agronomy|农学</item>
+        <item>engineering|工程</item>
+        <item>electronics|电子</item>
+        <item>atmosphere|大气</item>
+        <item>education|教育</item>
+        <item>communication|传播</item>
+        <item>society|社会</item>
+        <item>internet|互联网</item>
+        <item>aerospace|航空航天</item>
+        <item>others|其它</item>
+    </string-array>
+
+    <string-array name="group_tabs">
+        <item>我的小组</item>
+        <item>小组热帖</item>
+        <item>加入的小组</item>
+    </string-array>
+
+    <string name="title_activity_article">文章</string>
+
+    <string name="btn_ok">确定</string>
+    <string name="btn_cancel">取消</string>
+
+    <string name="hint_image_url">图片地址</string>
+    <string name="title_pick_photo">请选择图片</string>
+    <string name="btn_dialog_preview">预览</string>
+
+    <string name="label_post_count">#%d</string>
+
+    <string-array name="insert_photo_items">
+        <item>外链图片</item>
+        <item>本地图片</item>
+        <item>相机拍照</item>
+    </string-array>
+
+    <string name="menu_open_with_browser">用浏览器打开</string>
+    <string name="title_activity_question">问答</string>
+    <string name="title_activity_user">我的果壳</string>
+    <string name="label_click_to_login">点击登录</string>
+    <string name="nv_action_messages">站内信</string>
+    <string name="nv_action_messages_count">私信（%d）</string>
+    <string name="nv_action_notices">通知</string>
+    <string name="nv_action_notices_count">通知（%d）</string>
+    <string name="menu_home_page">果壳首页</string>
+    <string name="label_all_comments">所有评论</string>
+    <string name="menu_share">分享</string>
+    <string name="menu_open_link">用浏览器打开</string>
+    <string name="menu_join_group">退出小组</string>
+    <string name="menu_quite_group">加入小组</string>
+    <string name="nav_notices">通知</string>
+    <string name="nav_messages">私信</string>
+    <string name="nav_night_mode">夜间模式</string>
+    <string name="nav_settings">设置</string>
+    <string name="menu_ignore_all">忽略全部</string>
+    <string name="menu_refresh">刷新</string>
+    <string name="menu_support">支持</string>
+    <string name="menu_oppose">反对</string>
+    <string name="menu_copy">复制</string>
+    <string name="menu_comment">评论</string>
+    <string name="menu_like">顶</string>
+    <string name="menu_logout">退出</string>
+    <string name="title_add_to_basket">添加到果蓝</string>
+    <string name="btn_create_basket">创建新果蓝</string>
+    <string name="nav_explore">浏览</string>
+    <string name="nav_about">关于</string>
+    <string name="nav_day_mode">日间模式</string>
+    <string name="title_save_home_state">保存主界面状态</string>
+    <string name="title_cancel_reply">确定要放弃回复？</string>
+    <string name="app_version">松果 (1.0)</string>
+    <string name="app_summary">这是一个开源的果壳网(Guokr.com)第三方客户端。</string>
+    <string name="project_site">https://github.com/drunlin/guokr-android</string>
+    <string name="title_project">项目主页</string>
+    <string name="title_author">作者邮箱</string>
+    <string name="title_licences">开源许可</string>
+    <string name="menu_delete">删除</string>
+    <string name="label_all_answers">所有答案</string>
+    <string name="summary_save_home_state">保存主界面最后显示的子界面的位置</string>
+    <string name="title_enable_watermark">启用图片水印</string>
+    <string name="summary_enable_watermark">由果壳在上传的图片中打上水印</string>
+    <string name="title_general_preference">基本设置</string>
+    <string name="title_clear_data">数据清理</string>
+    <string name="title_app_info">应用信息</string>
+    <string name="summary_app_info">查看在应用管理器中应用信息</string>
+    <string name="title_create_basket">创建果蓝</string>
+    <string name="toast_basket_categories_on_loading">分类正在加载中</string>
+    <string name="toast_load_baskets_failed">果篮加载失败</string>
+    <string name="toast_create_basket_failed">创建果篮失败</string>
+    <string name="toast_favor_link_failed">收藏链接失败</string>
+    <string name="toast_load_content_failed">内容加载失败</string>
+    <string name="toast_comment_failed">评论失败</string>
+    <string name="title_share">分享到</string>
+    <string name="toast_join_group_failed">加入小组失败</string>
+    <string name="toast_quit_group_failed">退出小组失败</string>
+    <string name="toast_load_failed">加载失败</string>
+    <string name="toast_ignore_all_failed">忽略全部操作失败</string>
+    <string name="toast_already_liked">已经顶过了</string>
+    <string name="toast_like_failed">顶帖子失败</string>
+    <string name="toast_load_answers_failed">加载回答失败</string>
+    <string name="toast_answer_failed">回答失败</string>
+    <string name="toast_delete_answer_failed">删除回答失败</string>
+    <string name="toast_support_answer_failed">支持回答失败</string>
+    <string name="toast_oppose_answer_failed">反对回答失败</string>
+    <string name="toast_load_comments_failed">评论加载失败</string>
+    <string name="toast_like_comment_failed">顶评论失败</string>
+    <string name="toast_delete_comment_failed">删除回复失败</string>
+    <string name="toast_load_basket_categories_failed">分类加载失败</string>
+    <string name="toast_take_photo_failed">拍照失败</string>
+    <string name="toast_launch_gallery_failed">启动相册应用失败</string>
+    <string name="toast_url_invalid">链接格式验证失败</string>
+    <string name="toast_image_url_invalid">图片链接格式验证失败</string>
+    <string name="toast_not_enough_memory">内存不足</string>
+    <string name="title_retry">需要重试吗？</string>
+    <string name="btn_retry">重试</string>
+    <string name="label_members">%d 人加入</string>
+    <string name="title_login_needed">需要先登录</string>
+    <string name="toast_find_article_type_failed">没有找到文章类型</string>
+    <string name="title_recommend">推荐给关注我的人</string>
+    <string name="toast_recommend_failed">推荐失败</string>
+    <string name="hint_recommend">说点什么</string>
+    <string name="hint_categories">分类</string>
+    <string name="hint_title">标题（必填）</string>
+    <string name="hint_description">描述</string>
+    <string name="hint_name">名称</string>
+    <string name="hint_link_url">链接地址</string>
+    <string name="title_activity_settings">设置</string>
+    <string name="title_activity_login">登录</string>
+    <string name="title_activity_searchable">搜索</string>
+    <string name="title_activity_post">帖子</string>
+    <string name="title_activity_message_list">站内信</string>
+    <string name="title_activity_notice_list">通知</string>
+    <string name="title_activity_group">小组</string>
+    <string name="title_activity_about">关于</string>
+    <string name="toast_permission_denied_read_storage">没有读外部存储的权限</string>
+    <string name="title_notices">通知</string>
+    <string name="title_messages">站内信</string>
+    <string name="title_insert_link">插入链接</string>
+    <string name="btn_insert">插入</string>
+    <string name="title_insert_picture">插入图片</string>
+    <string name="btn_login">登录</string>
+    <string name="btn_close">关闭</string>
+    <string name="btn_recommend">推荐</string>
+</resources>

@@ -1,0 +1,43 @@
+{
+  "now": "2016-03-16T04:52:00.915388+08:00",
+  "ok": true,
+  "result": {
+    "answers_count": 1,
+    "activities_count": 6,
+    "badge_counts": {
+      "copper": 7,
+      "total": 7,
+      "silver": 0,
+      "gold": 0
+    },
+    "master_introduction": "",
+    "followings_count": 1,
+    "event_videos_count": 0,
+    "ukey": "000000",
+    "answer_supports_count": 0,
+    "is_title_authorized": false,
+    "nickname": "作者",
+    "blog_title": null,
+    "questions_count": 0,
+    "city": null,
+    "amended_reliability": 0,
+    "title": "",
+    "url": "http://www.guokr.com/i/0000000000/",
+    "gender": null,
+    "area": null,
+    "taggings": [],
+    "introduction": "",
+    "followers_count": 1,
+    "blogs_count": 0,
+    "avatar": {
+      "large": "http://example.com/img.png",
+      "small": "http://example.com/img.png",
+      "normal": "http://example.com/img.png"
+    },
+    "blog_url": "",
+    "date_created": "2015-04-17T18:35:24.380837+08:00",
+    "resource_url": "http://apis.guokr.com/community/user/000000.json",
+    "baskets_count": 2,
+    "posts_count": 2
+  }
+}

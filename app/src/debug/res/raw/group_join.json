@@ -1,0 +1,13 @@
+{
+  "now": "2016-01-15T17:37:50.607028+08:00",
+  "ok": true,
+  "result": {
+    "group": "/fakeurl",
+    "role": "member",
+    "user": "http://apis.guokr.com/community/user/000000.json",
+    "ukey": "000000",
+    "date_created": "2016-01-15T17:37:50.405197+08:00",
+    "is_honorary": false,
+    "group_id": 0
+  }
+}

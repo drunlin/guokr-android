@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".MainActivity"
+      tools:ignore="AlwaysShowAction">
+    <!--ifRoom有问题，只能用always-->
+    <item
+        android:id="@+id/menu_notice"
+        android:visible="false"
+        tools:visible="true"
+        tools:title="2"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/menu_search"
+        android:icon="@drawable/ic_search_white"
+        android:title="@string/menu_search"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/menu_home_page"
+        android:title="@string/menu_home_page"/>
+</menu>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="?selectableItemBackground">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/item_vertical_margin"
+        android:layout_marginBottom="@dimen/item_vertical_margin"
+        android:layout_marginLeft="@dimen/item_horizontal_margin"
+        android:layout_marginRight="@dimen/item_horizontal_margin"
+        android:orientation="vertical"
+        tools:ignore="RtlHardcoded">
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="问个问题"
+            style="@style/AppTheme.PrimaryText"/>
+        <TextView
+            android:id="@+id/text_summary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/vertical_gap_margin_small"
+            tools:text="怎样才能这样那样？"
+            style="@style/AppTheme.SecondaryText"/>
+    </LinearLayout>
+    <include layout="@layout/view_divider"/>
+</LinearLayout>

@@ -1,0 +1,206 @@
+{
+  "now": "2016-01-15T19:54:34.946017+08:00",
+  "ok": true,
+  "result": [
+    {
+      "is_member": true,
+      "is_indexable": true,
+      "is_publicly_readable": true,
+      "posts_count": 8872,
+      "is_membership_applied": false,
+      "id": 0,
+      "icon": {
+        "large": "http://example.com/img.png",
+        "small": "http://example.com/img.png",
+        "normal": "http://example.com/img.png"
+      },
+      "members_count": 1058189,
+      "name": "",
+      "level": "active",
+      "url": "http://www.guokr.com/group/00/",
+      "is_application_required": false,
+      "introduction_summary": "概要概要概要概要概要概要概要概要概要概要概要",
+      "resource_url": "/fakeurl"
+    },
+    {
+      "is_member": true,
+      "is_indexable": true,
+      "is_publicly_readable": true,
+      "posts_count": 4957,
+      "is_membership_applied": false,
+      "id": 0,
+      "icon": {
+        "large": "http://example.com/img.png",
+        "small": "http://example.com/img.png",
+        "normal": "http://example.com/img.png"
+      },
+      "members_count": 737352,
+      "name": "名称名称",
+      "level": "active",
+      "url": "http://www.guokr.com/group/00/",
+      "is_application_required": false,
+      "introduction_summary": "概要概要概要概要概要概要概要概要概要概要",
+      "resource_url": "/fakeurl"
+    },
+    {
+      "is_member": true,
+      "is_indexable": true,
+      "is_publicly_readable": true,
+      "posts_count": 382,
+      "is_membership_applied": false,
+      "id": 0,
+      "icon": {
+        "large": "http://example.com/img.png",
+        "small": "http://example.com/img.png",
+        "normal": "http://example.com/img.png"
+      },
+      "members_count": 26274,
+      "name": "名称名称",
+      "level": "common",
+      "url": "http://www.guokr.com/group/000/",
+      "is_application_required": false,
+      "introduction_summary": "概要概要概要概要概要概要概要概要概要概要概要",
+      "resource_url": "/fakeurl"
+    },
+    {
+      "is_member": true,
+      "is_indexable": true,
+      "is_publicly_readable": true,
+      "posts_count": 9739,
+      "is_membership_applied": false,
+      "id": 0,
+      "icon": {
+        "large": "http://example.com/img.png",
+        "small": "http://example.com/img.png",
+        "normal": "http://example.com/img.png"
+      },
+      "members_count": 990173,
+      "name": "名称名称",
+      "level": "active",
+      "url": "http://www.guokr.com/group/00/",
+      "is_application_required": false,
+      "introduction_summary": "概要概要概要概要概要概要概要概要概要概要概要概要",
+      "resource_url": "/fakeurl"
+    },
+    {
+      "is_member": true,
+      "is_indexable": true,
+      "is_publicly_readable": true,
+      "posts_count": 169,
+      "is_membership_applied": false,
+      "id": 0,
+      "icon": {
+        "large": "http://example.com/img.png",
+        "small": "http://example.com/img.png",
+        "normal": "http://example.com/img.png"
+      },
+      "members_count": 27297,
+      "name": "名称名称",
+      "level": "common",
+      "url": "http://www.guokr.com/group/000/",
+      "is_application_required": false,
+      "introduction_summary": "概要概要概要",
+      "resource_url": "/fakeurl"
+    },
+    {
+      "is_member": true,
+      "is_indexable": true,
+      "is_publicly_readable": true,
+      "posts_count": 2484,
+      "is_membership_applied": false,
+      "id": 0,
+      "icon": {
+        "large": "http://example.com/img.png",
+        "small": "http://example.com/img.png",
+        "normal": "http://example.com/img.png"
+      },
+      "members_count": 707358,
+      "name": "名称名称",
+      "level": "active",
+      "url": "http://www.guokr.com/group/000/",
+      "is_application_required": false,
+      "introduction_summary": "概要概要概要概要概要概要概要",
+      "resource_url": "/fakeurl"
+    },
+    {
+      "is_member": true,
+      "is_indexable": true,
+      "is_publicly_readable": true,
+      "posts_count": 53,
+      "is_membership_applied": false,
+      "id": 0,
+      "icon": {
+        "large": "http://example.com/img.png",
+        "small": "http://example.com/img.png",
+        "normal": "http://example.com/img.png"
+      },
+      "members_count": 12038,
+      "name": "名称名称",
+      "level": "common",
+      "url": "http://www.guokr.com/group/000/",
+      "is_application_required": false,
+      "introduction_summary": "概要概要概要概要",
+      "resource_url": "/fakeurl"
+    },
+    {
+      "is_member": true,
+      "is_indexable": true,
+      "is_publicly_readable": true,
+      "posts_count": 52,
+      "is_membership_applied": false,
+      "id": 0,
+      "icon": {
+        "large": "http://example.com/img.png",
+        "small": "http://example.com/img.png",
+        "normal": "http://example.com/img.png"
+      },
+      "members_count": 10528,
+      "name": "名称",
+      "level": "common",
+      "url": "http://www.guokr.com/group/000/",
+      "is_application_required": false,
+      "introduction_summary": "概要概要概要",
+      "resource_url": "/fakeurl"
+    },
+    {
+      "is_member": true,
+      "is_indexable": true,
+      "is_publicly_readable": true,
+      "posts_count": 27,
+      "is_membership_applied": false,
+      "id": 0,
+      "icon": {
+        "large": "http://example.com/img.png",
+        "small": "http://example.com/img.png",
+        "normal": "http://example.com/img.png"
+      },
+      "members_count": 9569,
+      "name": "名称名称",
+      "level": "common",
+      "url": "http://www.guokr.com/group/000/",
+      "is_application_required": false,
+      "introduction_summary": "概要概要概要概要概要",
+      "resource_url": "/fakeurl"
+    },
+    {
+      "is_member": true,
+      "is_indexable": true,
+      "is_publicly_readable": true,
+      "posts_count": 21358,
+      "is_membership_applied": false,
+      "id": 0,
+      "icon": {
+        "large": "http://example.com/img.png",
+        "small": "http://example.com/img.png",
+        "normal": "http://example.com/img.png"
+      },
+      "members_count": 998103,
+      "name": "名称",
+      "level": "active",
+      "url": "http://www.guokr.com/group/00/",
+      "is_application_required": false,
+      "introduction_summary": "概要概要概要概要概要概要概要概要概要概要",
+      "resource_url": "/fakeurl"
+    }
+  ]
+}

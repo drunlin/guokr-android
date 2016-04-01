@@ -1,0 +1,69 @@
+{
+  "now": "2016-01-05T20:45:00.191272+08:00",
+  "ok": true,
+  "result": {
+    "is_stared": false,
+    "is_answerable": true,
+    "tags": [
+      {
+        "is_editable": true,
+        "questions_count": 8662,
+        "followers_count": 249335,
+        "name": "",
+        "date_modified": "2015-09-14T11:37:47.116191+08:00",
+        "url": "http://www.guokr.com/ask/tag/%E7%89%A9%E7%90%86%E5%AD%A6/",
+        "date_created": "2012-08-03T19:03:04.021468+08:00",
+        "summary": "概要概要概要概要概要概要概要概要",
+        "icon": {
+          "large": "http://example.com/img.png",
+          "small": "http://example.com/img.png"
+        }
+      },
+      {
+        "is_editable": true,
+        "questions_count": 35,
+        "followers_count": 33,
+        "name": "",
+        "date_modified": "2012-09-19T16:40:10.044718+08:00",
+        "url": "http://www.guokr.com/ask/tag/%E9%AB%98%E8%83%BD%E7%89%A9%E7%90%86/",
+        "date_created": "2012-09-12T14:18:32.680050+08:00",
+        "summary": "概要概要概要概要概要概要概要概要概要概要",
+        "icon": {
+          "large": "http://example.com/img.png",
+          "small": "http://example.com/img.png"
+        }
+      }
+    ],
+    "replies_count": 0,
+    "id": 0,
+    "annotation_html": "",
+    "recommends_count": 0,
+    "author": {
+      "ukey": "000000",
+      "is_title_authorized": false,
+      "nickname": "",
+      "amended_reliability": "0",
+      "is_exists": true,
+      "title": "",
+      "url": "http://www.guokr.com/i/0000000000/",
+      "gender": null,
+      "followers_count": 0,
+      "avatar": {
+        "large": "http://example.com/img.png",
+        "small": "http://example.com/img.png",
+        "normal": "http://example.com/img.png"
+      },
+      "ask_profile": "http://www.guokr.com/ask/i/0000000000/",
+      "resource_url": "http://apis.guokr.com/community/user/000000.json"
+    },
+    "url": "http://www.guokr.com/question/000000/",
+    "question": "问题问题问题问题问题问题问题问题问题问题问题问题问题问题问题问题问题问题问题",
+    "summary": "概要概要概要概要",
+    "date_last_answered": "2016-01-04T13:12:42.188582+08:00",
+    "followers_count": 3,
+    "archives_count": 1,
+    "date_created": "2016-01-04T09:50:04.165467+08:00",
+    "annotation": "",
+    "answers_count": 1
+  }
+}
