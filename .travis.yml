@@ -1,0 +1,13 @@
+language: android
+jdk: oraclejdk7
+android:
+  components:
+    - build-tools-23.0.2
+    - android-23
+    - extra-android-m2repository
+    - extra-android-support
+    - addon-google_apis-google-23
+
+env:
+  global:
+    - JAVA8_HOME=/usr/lib/jvm/java-8-oracle
