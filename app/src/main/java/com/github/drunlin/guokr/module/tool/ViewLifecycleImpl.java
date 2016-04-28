@@ -91,7 +91,7 @@ public class ViewLifecycleImpl implements ViewLifecycle {
 
         if (savedInstanceState) {
             savedInstanceState = false;
-
+        } else {
             presenter.onViewDestroyed();
         }
 
