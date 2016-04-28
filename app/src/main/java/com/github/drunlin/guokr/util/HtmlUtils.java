@@ -66,16 +66,16 @@ public class HtmlUtils {
         Map<String, String> regexps = new HashMap<>();
 
         regexps.put("<br>", "\n");
-        regexps.put("<a href=\"(.+?)\">(.*?)</a>", "[url=$1]$2[/url]");
-        regexps.put("<img src=\"(.+?)\"( alt=\".*?\")?>", "[img]$1[/img]");
+        regexps.put("<a href=\"([^\"]++)\">([^<>]*+)</a>", "[url=$1]$2[/url]");
+        regexps.put("<img src=\"([^\"]++)\"( alt=\"[^\"]*+\")?>", "[img]$1[/img]");
 
         for (Map.Entry<String, String> entry : regexps.entrySet()) {
             html = html.replaceAll(entry.getKey(), entry.getValue());
         }
 
         //处理嵌套的标签，有时会有style属性，顺序为从里到外
-        Pattern pattern =
-                Pattern.compile("(?s)<(\\w+)( style=\"(.+?)\")?>(((?!</?\\1( .*?)?>).)*)</\\1>");
+        Pattern pattern = Pattern.compile(
+                "(?s)<(\\w+)( style=\"([^\"]++)\")?>(((?!</?\\1[^<>]*+>).)*+)</\\1>");
 
         Map<String, Converter<String, String>> converters = new HashMap<>();
         converters.put("p", s -> "\n" + s + "\n");
@@ -124,5 +124,32 @@ public class HtmlUtils {
         }
 
         return html;
+    }
+
+    /**
+     * 移除所有的引用。
+     * @param html
+     * @return
+     */
+    public static String removeQuotes(String html) {
+        Pattern pattern = Pattern.compile("</?blockquote>");
+        Matcher matcher = pattern.matcher(html);
+        StringBuilder builder = new StringBuilder();
+        int index = 0;
+        int count = 0;
+        while (matcher.find()) {
+            if (matcher.group().charAt(1) == '/') {
+                count -= 1;
+                if (count == 0) {
+                    index = matcher.end();
+                }
+            } else {
+                if (count == 0) {
+                    builder.append(html.substring(index, matcher.start()));
+                }
+                count += 1;
+            }
+        }
+        return builder.append(html.substring(index)).toString();
     }
 }

@@ -51,10 +51,9 @@ public abstract class TopicContentModelBase<T>
     @Override
     public String getQuote(Comment comment) {
         String name = HtmlUtils.escapeHtml(comment.author.nickname);
-        //不支持嵌套的情况
-        String content = comment.content.replaceAll("(?s)<(blockquote)>.*?</\\1>", "");
-        content = HtmlUtils.escapeHtml(Jsoup.parse(content).text());
+        String quote = HtmlUtils.escapeHtml(
+                Jsoup.parse(HtmlUtils.removeQuotes(comment.content)).text());
         return String.format(
-                "<div><blockquote>引用 @%s 的话：%s</blockquote><br></div>", name, content);
+                "<div><blockquote>引用 @%s 的话：%s</blockquote><br></div>", name, quote);
     }
 }
