@@ -66,7 +66,7 @@ public class HtmlUtils {
         Map<String, String> regexps = new HashMap<>();
 
         regexps.put("<br>", "\n");
-        regexps.put("<a href=\"([^\"]++)\">([^<>]*+)</a>", "[url=$1]$2[/url]");
+        regexps.put("<a href=\"([^\"]++)\">([^<]*+)</a>", "[url=$1]$2[/url]");
         regexps.put("<img src=\"([^\"]++)\"( alt=\"[^\"]*+\")?>", "[img]$1[/img]");
 
         for (Map.Entry<String, String> entry : regexps.entrySet()) {
@@ -75,7 +75,7 @@ public class HtmlUtils {
 
         //处理嵌套的标签，有时会有style属性，顺序为从里到外
         Pattern pattern = Pattern.compile(
-                "(?s)<(\\w+)( style=\"([^\"]++)\")?>(((?!</?\\1[^<>]*+>).)*+)</\\1>");
+                "(?s)<(\\w+)( style=\"([^\"]++)\")?>(((?!<\\1( [^>]++)?>|</\\1>).)*+)</\\1>");
 
         Map<String, Converter<String, String>> converters = new HashMap<>();
         converters.put("p", s -> "\n" + s + "\n");
