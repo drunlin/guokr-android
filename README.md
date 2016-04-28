@@ -3,7 +3,7 @@
 (https://android-arsenal.com/api?level=15)
 [![Build Status](https://travis-ci.org/drunlin/guokr-android.svg?branch=master)]
 (https://travis-ci.org/drunlin/guokr-android)
-## 这是一个[果壳网](http://guokr.com)第三方Android客户端。[下载](https://github.com/drunlin/guokr-android/releases/download/beta1.2/app-release.apk)  
+## 这是一个[果壳网](http://guokr.com)第三方Android客户端。[下载](https://github.com/drunlin/guokr-android/releases/download/beta1.3/app-release.apk)  
 
 # 截图 
 <img src="/res/screenshot0.png" width=761 height=480>  
