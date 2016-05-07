@@ -33,11 +33,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
-                android:paddingRight="20dp"
                 android:textSize="@dimen/activity_title"
+                android:textColor="?colorControlNormal"
                 tools:text="科学人"
-                style="@style/Widget.AppCompat.Light.Spinner.DropDown.ActionBar"
-                tools:ignore="RtlHardcoded,RtlSymmetry"/>
+                android:drawableRight="@drawable/abc_spinner_mtrl_am_alpha"
+                android:background="?selectableItemBackgroundBorderless"
+                android:padding="2dp"
+                tools:ignore="PrivateResource,RtlHardcoded,RtlSymmetry"/>
         </android.support.v7.widget.Toolbar>
     </android.support.design.widget.AppBarLayout>
 
