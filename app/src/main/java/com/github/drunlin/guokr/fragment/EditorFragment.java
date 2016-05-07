@@ -9,7 +9,6 @@ import android.graphics.Color;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -294,8 +293,8 @@ public class EditorFragment extends FragmentBase implements EditorView {
     }
 
     private File createImageFile() throws IOException {
-        File image = File.createTempFile("" + System.currentTimeMillis(), ".jpg",
-                getContext().getExternalFilesDir(Environment.DIRECTORY_PODCASTS));
+        File image = File.createTempFile(
+                "" + System.currentTimeMillis(), ".jpg", getContext().getExternalCacheDir());
         currentPhotoPath = image.getAbsolutePath();
         return image;
     }
