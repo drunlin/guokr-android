@@ -54,6 +54,6 @@ public abstract class TopicContentModelBase<T>
         String quote = HtmlUtils.escapeHtml(
                 Jsoup.parse(HtmlUtils.removeQuotes(comment.content)).text());
         return String.format(
-                "<div><blockquote>引用 @%s 的话：%s</blockquote><br></div>", name, quote);
+                "<blockquote>引用 @%s 的话：%s</blockquote><br>", name, quote);
     }
 }

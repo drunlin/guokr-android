@@ -1,5 +1,7 @@
 package com.github.drunlin.guokr.util;
 
+import android.text.Html;
+
 import com.github.drunlin.guokr.util.JavaUtil.Converter;
 
 import java.util.HashMap;
@@ -65,7 +67,7 @@ public class HtmlUtils {
         //首先格式化不可嵌套的标签
         Map<String, String> regexps = new HashMap<>();
 
-        regexps.put("<br>", "\n");
+        //regexps.put("<br>", "\n");
         regexps.put("<a href=\"([^\"]++)\">([^<]*+)</a>", "[url=$1]$2[/url]");
         regexps.put("<img src=\"([^\"]++)\"( alt=\"[^\"]*+\")?>", "[img]$1[/img]");
 
@@ -78,14 +80,13 @@ public class HtmlUtils {
                 "(?s)<(\\w+)( style=\"([^\"]++)\")?>(((?!<\\1( [^>]++)?>|</\\1>).)*+)</\\1>");
 
         Map<String, Converter<String, String>> converters = new HashMap<>();
-        converters.put("p", s -> "\n" + s + "\n");
-        converters.put("div", s -> s);
         converters.put("b", s -> "[b]" + s + "[/b]");
         converters.put("i", s -> "[i]" + s + "[/i]");
         converters.put("blockquote", s -> "[quote]" + s + "[/quote]");
         converters.put("ol", s -> "[list=1]" + s + "[/list]");
         converters.put("ul", s -> "[list]" + s + "[/list]");
         converters.put("li", s -> "[*]" + s);
+        converters.put("p", s -> "<br>" + s);
 
         Matcher matcher = pattern.matcher(html);
         while (matcher.find()) {
@@ -123,7 +124,7 @@ public class HtmlUtils {
             matcher.reset(html);
         }
 
-        return html;
+        return Html.fromHtml(html).toString();
     }
 
     /**
@@ -139,15 +140,11 @@ public class HtmlUtils {
         int count = 0;
         while (matcher.find()) {
             if (matcher.group().charAt(1) == '/') {
-                count -= 1;
-                if (count == 0) {
+                if (--count == 0) {
                     index = matcher.end();
                 }
-            } else {
-                if (count == 0) {
-                    builder.append(html.substring(index, matcher.start()));
-                }
-                count += 1;
+            } else if (count++ == 0) {
+                builder.append(html.substring(index, matcher.start()));
             }
         }
         return builder.append(html.substring(index)).toString();

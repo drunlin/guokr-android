@@ -12,26 +12,25 @@ public class HtmlUtilsTest {
     public void htmlToBBCode() throws Exception {
         final String html =
                         "<p>" +
-                        "<a href=\"http://guokr.com\">Guokr</a>\n" +
-                        "<img src=\"http://guokr.com/logo.png\">\n" +
+                        "<a href=\"http://guokr.com\">Guokr</a><br>" +
+                        "<img src=\"http://guokr.com/logo.png\"><br>" +
                         "</p>" +
                         "<b>b<i>bi</i></b>" +
                         "<b style=\"font-style: italic;\">bi</b>" +
                         "<i style=\"font-weight: bold;\">bi</i>" +
                         "<ol><li><b>1</b></li><li><i>2</i></li><li><b><i>3</i></b></li></ol>" +
                         "<ul><li><b>1</b></li><li><i>2</i></li><li><b><i>3</i></b></li></ul>" +
-                        "<blockquote>abc\n<blockquote>def</blockquote></blockquote>";
+                        "<blockquote>a<br>b<blockquote>q&#60;</blockquote></blockquote>";
         final String bbCode =
                         "\n" +
                         "[url=http://guokr.com]Guokr[/url]\n" +
                         "[img]http://guokr.com/logo.png[/img]\n" +
-                        "\n" +
                         "[b]b[i]bi[/i][/b]" +
                         "[b][i]bi[/i][/b]" +
                         "[i][b]bi[/b][/i]" +
                         "[list=1][*][b]1[/b][*][i]2[/i][*][b][i]3[/i][/b][/list]" +
                         "[list][*][b]1[/b][*][i]2[/i][*][b][i]3[/i][/b][/list]" +
-                        "[quote]abc\n[quote]def[/quote][/quote]";
+                        "[quote]a\nb[quote]q<[/quote][/quote]";
         assertEquals(bbCode, HtmlUtils.htmlToBBCode(html));
     }
 
