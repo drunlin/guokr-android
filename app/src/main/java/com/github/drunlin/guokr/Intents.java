@@ -56,9 +56,6 @@ public class Intents {
         }
         Pattern pattern = Pattern.compile("/" + name + "/(\\d++)/?.*$");
         Matcher matcher = pattern.matcher(path);
-        if (matcher.find()) {
-            return Integer.parseInt(matcher.group(1));
-        }
-        return -1;
+        return matcher.find() ? Integer.parseInt(matcher.group(1)) : -1;
     }
 }

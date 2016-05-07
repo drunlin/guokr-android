@@ -161,7 +161,7 @@ public class RichTextView extends View {
     }
 
     /**
-     * 坚持是否为当前的HTML数据。
+     * 检查是否为当前的HTML数据。
      * @param html
      * @return
      */
@@ -288,7 +288,6 @@ public class RichTextView extends View {
                 if (mVisible) {
                     mLayout = null;
                 } else if (mSize != null) {
-
                     layoutThreadPool.execute(this::updateLayout);
                 }
                 mVisible = !mVisible;
