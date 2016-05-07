@@ -7,14 +7,14 @@ def getProjectProperty(String name) {
 
 android {
     compileSdkVersion 23
-    buildToolsVersion '23.0.2'
+    buildToolsVersion '23.0.3'
 
     defaultConfig {
         applicationId 'com.github.drunlin.guokr'
         minSdkVersion 15
         targetSdkVersion 23
-        versionCode 1
-        versionName '1.0'
+        versionCode 2
+        versionName '1.1'
 
         vectorDrawables.useSupportLibrary = true
 
