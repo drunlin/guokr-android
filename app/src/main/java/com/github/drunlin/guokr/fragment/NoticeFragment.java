@@ -54,6 +54,13 @@ public class NoticeFragment extends FragmentBase implements NoticeView {
     }
 
     @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+        outState.putBoolean("recreate", true);
+    }
+
+    @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         notification = menu.findItem(R.id.menu_notice);
     }
