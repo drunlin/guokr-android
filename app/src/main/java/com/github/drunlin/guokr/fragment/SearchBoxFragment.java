@@ -59,7 +59,7 @@ public class SearchBoxFragment extends FragmentBase implements SearchBoxView, Se
 
     @Override
     public void search(String query) {
-        getActivity().startActivity(SearchableActivity.getIntent(query));
+        startActivity(SearchableActivity.getIntent(query));
 
         searchView.closeSearch();
     }
@@ -86,7 +86,7 @@ public class SearchBoxFragment extends FragmentBase implements SearchBoxView, Se
 
     @Override
     public boolean onSearchEditBackPressed() {
-        searchView.cancelEditing();
+        searchView.closeSearch();
         return true;
     }
 

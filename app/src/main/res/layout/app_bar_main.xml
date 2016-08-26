@@ -21,13 +21,16 @@
             app:layout_scrollFlags="scroll|enterAlways|snap">
             <FrameLayout
                 android:layout_width="wrap_content"
-                android:layout_height="44dp">
+                android:layout_height="match_parent">
                 <View
                     android:id="@+id/menu_anchor"
                     android:layout_width="0dp"
-                    android:layout_height="0dp"/>
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-24dp"
+                    android:layout_marginLeft="-22dp"
+                    tools:ignore="RtlHardcoded" />
             </FrameLayout>
-
             <TextView
                 android:id="@+id/text_navigation"
                 android:layout_width="wrap_content"
@@ -38,7 +41,7 @@
                 tools:text="科学人"
                 android:drawableRight="@drawable/abc_spinner_mtrl_am_alpha"
                 android:background="?selectableItemBackgroundBorderless"
-                android:padding="2dp"
+                android:drawablePadding="2dp"
                 tools:ignore="PrivateResource,RtlHardcoded,RtlSymmetry"/>
         </android.support.v7.widget.Toolbar>
     </android.support.design.widget.AppBarLayout>

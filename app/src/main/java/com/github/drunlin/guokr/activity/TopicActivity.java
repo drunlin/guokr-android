@@ -6,7 +6,6 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import com.github.drunlin.guokr.App;
 import com.github.drunlin.guokr.R;
 import com.github.drunlin.guokr.bean.Comment;
 import com.github.drunlin.guokr.bean.Content;
@@ -15,8 +14,6 @@ import com.github.drunlin.guokr.util.ToastUtils;
 import com.github.drunlin.guokr.view.TopicView;
 
 import butterknife.Bind;
-
-import static com.github.drunlin.guokr.util.JavaUtil.call;
 
 /**
  * 文章，帖子界面的基类，它们有相同的回复列表界面。
@@ -48,7 +45,9 @@ public abstract class TopicActivity<T extends Content, P extends TopicPresenter>
 
     @Override
     public void insertQuote(String quote) {
-        App.post(() -> call(getEditor(), editor -> editor.insertHtml(quote)));
+        getSupportFragmentManager().executePendingTransactions();
+        //noinspection ConstantConditions
+        getEditor().insertHtml(quote);
     }
 
     @Override

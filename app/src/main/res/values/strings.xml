@@ -111,7 +111,7 @@
     <string name="nav_day_mode">日间模式</string>
     <string name="title_save_home_state">保存主界面状态</string>
     <string name="title_cancel_reply">确定要放弃回复？</string>
-    <string name="app_version">松果 (1.1)</string>
+    <string name="app_version">松果 v1.2</string>
     <string name="app_summary">这是一个开源的果壳网(Guokr.com)第三方客户端。</string>
     <string name="project_site">https://github.com/drunlin/guokr-android</string>
     <string name="title_project">项目主页</string>

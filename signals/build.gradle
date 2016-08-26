@@ -1,4 +1,11 @@
 apply plugin: 'java'
+apply plugin: 'me.tatarka.retrolambda'
+
+retrolambda {
+    jdk getProjectProperty('JAVA_HOME')
+    oldJdk getProjectProperty('JAVA7_HOME')
+    javaVersion JavaVersion.VERSION_1_7
+}
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])

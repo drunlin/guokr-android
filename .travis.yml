@@ -1,17 +1,17 @@
 language: android
-jdk: oraclejdk7
+jdk: oraclejdk8
 android:
   components:
   - tools
   - platform-tools
-  - build-tools-23.0.3
-  - android-23
+  - build-tools-24
+  - android-24
   - extra-android-m2repository
   - extra-android-support
   - addon-google_apis-google-23
 env:
   global:
-  - JAVA8_HOME=/usr/lib/jvm/java-8-oracle
+  - JAVA7_HOME=/usr/lib/jvm/java-7-oracle
 before_install:
 - openssl aes-256-cbc -K $encrypted_8745c88362bd_key -iv $encrypted_8745c88362bd_iv
   -in app.jks.enc -out app.jks -d

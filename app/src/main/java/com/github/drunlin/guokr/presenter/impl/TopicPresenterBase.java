@@ -46,8 +46,9 @@ public abstract class TopicPresenterBase<
 
     @Override
     public void onReplyComment(Comment comment) {
-        onPreReply();
-
-        view.insertQuote(model.getQuote(comment));
+        if (userModel.checkLoggedIn()) {
+            view.preReply();
+            view.insertQuote(model.getQuote(comment));
+        }
     }
 }

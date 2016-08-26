@@ -205,7 +205,8 @@ public abstract class ContentActivity
         EditorFragment editor = new EditorFragment();
         editor.setOnCompleteListener(content -> presenter.reply(content));
         getSupportFragmentManager().beginTransaction()
-                .replace(R.id.container_reply, editor).commit();
+                .replace(R.id.container_reply, editor)
+                .commit();
     }
 
     /**
