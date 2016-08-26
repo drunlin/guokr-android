@@ -68,7 +68,7 @@ public class UserModelImpl extends Model implements UserModel {
     }
 
     private void setUserInfo(UserInfo info) {
-        if (Objects.equal(userInfo, info)) {
+        if (isLoggedIn() && Objects.equal(userInfo, info)) {
             return;
         }
 
