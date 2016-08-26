@@ -18,6 +18,7 @@ import android.text.style.ClickableSpan;
 import android.text.style.URLSpan;
 import android.util.AttributeSet;
 import android.util.LruCache;
+import android.util.TypedValue;
 import android.view.MotionEvent;
 import android.view.View;
 
@@ -89,10 +90,11 @@ public class RichTextView extends View {
                 android.R.attr.textColorLink
         };
         array = theme.obtainStyledAttributes(id, arr);
-        mTextPaint.setTextSize(array.getDimensionPixelSize(0, 15));
         mTextPaint.setColor(array.getColor(1, 0));
         mTextPaint.linkColor = array.getColor(2, 0);
         array.recycle();
+
+        mTextPaint.setTextSize(ViewUtils.getDimension(getContext(), TypedValue.COMPLEX_UNIT_SP, 14));
 
         array = context.obtainStyledAttributes(attrs, new int[] {android.R.attr.text});
         if (array.hasValue(0)) {
