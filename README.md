@@ -1,8 +1,7 @@
 # 松果
 [![API](https://img.shields.io/badge/API-15%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=15) [![Build Status](https://travis-ci.org/drunlin/guokr-android.svg?branch=master)](https://travis-ci.org/drunlin/guokr-android)  
 
-## 这是一个[果壳网](http://guokr.com)第三方Android客户端。  
-### [最新版本](https://github.com/drunlin/guokr-android/releases/download/beta1.4/app-release.apk)  [历史版本](https://github.com/drunlin/guokr-android/releases)
+## 这是一个[果壳网](http://guokr.com)第三方Android客户端。[下载](https://github.com/drunlin/guokr-android/releases)
 
 # 截图
 <img src="/res/screenshot0.png" width=761 height=480>  
@@ -20,8 +19,10 @@
 * 支持夜间模式。
 
 # 新版变化
-* 修复在Android N上导航按钮错位。
-* 修复回复可能会出现HTML转义符。
+* 更新主题颜色。
+* 更改内容字体大小为14sp。
+* 修复不能搜索多个关键词。
+* 修复其它的小问题。
 
 # 计划
 * 发帖和提问。
@@ -30,7 +31,7 @@
 * 修复部分弹窗转屏会消失。
 
 # 编译
-* 设置环境变量JAVA_HOME为Oracle JDK 7的路径，JAVA8_HOME为Oracle JDK 8的路径。更多请看[gradle-retrolambda](https://github.com/evant/gradle-retrolambda)。
+* 设置环境变量JAVA_HOME为Oracle JDK 8的路径，JAVA7_HOME为Oracle JDK 7的路径。更多请看[gradle-retrolambda](https://github.com/evant/gradle-retrolambda)。
 * 设置环境变量ANDROID_HOME为Android SKD的路径，用Android Studio可以忽略。
 * 对UI的测试需要注意[UiTestCase](/app/src/androidTest/java/com/github/drunlin/guokr/test/UiTestCase.java)这个类。
 * ```$ ./gradlew assembleDebug```  
