@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="?selectableItemBackground"
     tools:ignore="RtlHardcoded">
@@ -33,11 +33,12 @@
                     android:layout_height="wrap_content"
                     tools:text="作者"
                     style="@style/AppTheme.PrimaryText"/>
-                <View
+                <android.support.v7.widget.AppCompatTextView
                     android:layout_width="3dp"
                     android:layout_height="3dp"
                     android:layout_margin="@dimen/horizontal_gap_margin_small"
-                    android:background="@drawable/ic_dot"/>
+                    android:background="@drawable/ic_dot"
+                    app:backgroundTint="@color/textColorPrimary"/>
                 <TextView
                     android:id="@+id/text_group"
                     android:layout_width="0dp"
@@ -45,12 +46,14 @@
                     android:layout_height="wrap_content"
                     tools:text="小组"
                     style="@style/AppTheme.PrimaryText.SingleLine"/>
-                <TextView
+                <android.support.v7.widget.AppCompatTextView
                     android:id="@+id/text_replies_count"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/horizontal_gap_margin_small"
                     android:textColor="@android:color/white"
                     android:background="@drawable/ic_replies"
+                    app:backgroundTint="@color/colorSecondary"
                     android:paddingLeft="@dimen/horizontal_gap_margin"
                     android:paddingRight="@dimen/horizontal_gap_margin"
                     tools:text="11"

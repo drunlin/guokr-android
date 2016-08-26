@@ -11,10 +11,10 @@
         <item name="android:textColorSecondary">@color/textColorSecondary</item>
         <item name="android:textColorHint">@color/textColorHint</item>
 
-        <item name="fab_addButtonColorNormal">@color/colorPrimary</item>
-        <item name="fab_addButtonColorPressed">@color/colorPrimaryLight</item>
-        <item name="fab_colorNormal">@color/colorPrimary</item>
-        <item name="fab_colorPressed">@color/colorPrimaryLight</item>
+        <item name="fab_addButtonColorNormal">@color/colorAccent</item>
+        <item name="fab_addButtonColorPressed">@color/colorAccentLight</item>
+        <item name="fab_colorNormal">@color/colorAccent</item>
+        <item name="fab_colorPressed">@color/colorAccentLight</item>
 
         <item name="alertDialogTheme">@style/AppTheme.Dialog</item>
 
@@ -52,7 +52,7 @@
     </style>
 
     <style name="AppTheme.HintText" parent="TextAppearance.AppCompat">
-        <item name="android:textSize">12.5sp</item>
+        <item name="android:textSize">13sp</item>
         <item name="android:textColor">?android:textColorHint</item>
     </style>
 
