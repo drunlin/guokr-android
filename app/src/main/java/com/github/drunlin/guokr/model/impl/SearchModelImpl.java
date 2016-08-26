@@ -55,6 +55,7 @@ public class SearchModelImpl
 
     @Override
     public void search(String query) {
+        query = query.trim().replaceAll("\\s", "+");
         //noinspection deprecation
         query = URLEncoder.encode(query).replace("%", "%%");
 
