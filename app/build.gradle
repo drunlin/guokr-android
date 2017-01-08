@@ -1,14 +1,15 @@
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
 apply plugin: 'me.tatarka.retrolambda'
 
 android {
-    compileSdkVersion 24
-    buildToolsVersion '24.0.2'
+    compileSdkVersion 25
+    buildToolsVersion '25.0.2'
 
     defaultConfig {
         applicationId 'com.github.drunlin.guokr'
         minSdkVersion 15
-        targetSdkVersion 24
+        targetSdkVersion 25
         versionCode 3
         versionName '1.2'
 
@@ -54,24 +55,27 @@ android {
         disable 'DefaultLocale'
         disable 'ContentDescription'
     }
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
 }
 
-retrolambda {
-    jdk getProjectProperty('JAVA_HOME')
-    oldJdk getProjectProperty('JAVA7_HOME')
-    javaVersion JavaVersion.VERSION_1_7
-}
+//retrolambda {
+//    jdk getProjectProperty('JAVA_HOME')
+//    oldJdk getProjectProperty('JAVA7_HOME')
+//    javaVersion JavaVersion.VERSION_1_7
+//}
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile project(':signals')
-    compile 'com.android.support:appcompat-v7:24.2.0'
-    compile 'com.android.support:design:24.2.0'
+    compile 'com.android.support:appcompat-v7:25.1.0'
+    compile 'com.android.support:design:25.1.0'
     compile 'com.mcxiaoke.volley:library:1.0.19'
     compile 'com.google.code.gson:gson:2.4'
-    compile 'com.android.support:cardview-v7:24.2.0'
-    compile 'com.android.support:recyclerview-v7:24.2.0'
-    compile 'com.android.support:support-v4:24.2.0'
+    compile 'com.android.support:cardview-v7:25.1.0'
+    compile 'com.android.support:recyclerview-v7:25.1.0'
+    compile 'com.android.support:support-v4:25.1.0'
     compile 'pl.droidsonroids.gif:android-gif-drawable:1.1.7'
     compile 'org.apmem.tools:layouts:1.10@aar'
     compile 'com.jakewharton:butterknife:7.0.1'
@@ -88,7 +92,7 @@ dependencies {
     androidTestCompile 'com.squareup:javawriter:2.5.0'
     androidTestCompile 'com.android.support.test:runner:0.5'
     androidTestCompile 'com.android.support.test:rules:0.5'
-    androidTestCompile 'com.android.support:support-annotations:24.2.0'
+    androidTestCompile 'com.android.support:support-annotations:25.1.0'
     androidTestCompile 'org.hamcrest:hamcrest-library:1.3'
     androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.2'
     androidTestCompile 'com.android.support.test.espresso:espresso-intents:2.2.2'
@@ -97,4 +101,8 @@ dependencies {
     androidTestCompile 'com.crittercism.dexmaker:dexmaker-mockito:1.4'
     androidTestCompile 'org.mockito:mockito-core:1.10.19'
     androidTestCompile 'com.squareup.okhttp:mockwebserver:2.7.0'
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+}
+repositories {
+    mavenCentral()
 }
